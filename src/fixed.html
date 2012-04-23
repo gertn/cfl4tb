@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Complex Form Layout</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Complex Form Layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link href="./assets/css/jquery-ui-1.8.16.custom.css" rel="stylesheet">
+	<link href="./assets/css/bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+	 body {
+	   padding-top: 60px;
+	   padding-bottom: 40px;
+	 }
+	</style>
+   	<link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="./assets/css/cfl4tb.css" rel="stylesheet">
+	<link href="./assets/css/prettify.css" rel="stylesheet">
 
-    <!-- Le styles -->
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-    </style>
-    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="./assets/ico/favicon.ico">
-  </head>
+  	<link rel="shortcut icon" href="./assets/ico/favicon.ico">
+</head>
 
   <body>
 
@@ -51,40 +50,224 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="hero-unit">
-            <h1>Fixed - demo</h1>
-          </div>
-        </div><!--/span-->
-      </div><!--/row-->
+<div class="container">
+<div class="row">
+<div id="formExamplePanel" class="span12">
+<form id="formExample" class="form-vertical cfl" action="">
+<fieldset>
+	<legend>Form</legend>
+	<div class="row cfl_top">
+		<div class="span12">
+			<div class="control-group">
+				<label class="control-label">Form style</label>
+				<div class="controls">
+				  <label class="radio">
+					<input type="radio" name="formLayout" id="formLayoutVertical" value="form-vertical" checked>
+					vertical
+				  </label>
+				  <label class="radio">
+					<input type="radio" name="formLayout" id="formLayoutHorizontal" value="form-horizontal">
+					horizontal
+				  </label>
+				</div>
+			</div>
+		 </div>
+ 	</div>
+</fieldset>
+<fieldset>
+	<legend>Address</legend>
+	<div class="row cfl_top">
+		<div class="span12">
+			<div class="control-group">
+				<label class="control-label" for="street_address">Street Address</label>
+				<div class="controls">
+					<input type="text" id="street_address">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<div class="control-group">
+				<label class="control-label" for="address_line2">Address Line 2</label>
+				<div class="controls">
+					<input type="text" id="address_line2">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span6">
+			<div class="control-group">
+				<label class="control-label" for="city">City</label>
+				<div class="controls">
+					<input type="text" id="city">
+				</div>
+			</div>
+		</div>
+		<div class="span6">
+			<div class="control-group">
+				<label class="control-label" for="state">State/Zip</label>
+				<div class="controls clf-controls-fluid">
+					<div class="span6">
+						<input type="text" id="state">
+					</div>
+					<div class="span6">
+						<input type="text" id="zip">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<div class="control-group">
+				<label class="control-label" for="country">Country</label>
+				<div class="controls">
+					<select id="country">
+					  <option>Belgium</option>
+					  <option>France</option>
+					  <option>Germany</option>
+					  <option>Italy</option>
+					  <option>Spain</option>
+				   </select>
+				</div>
+			</div>
+		</div>
+	</div>
+</fieldset>
+<fieldset>
+	<legend>Personal data</legend>
+	<div class="row cfl_top">
+		<div class="span4">
+			<div class="control-group">
+				<label class="control-label" for="customer_number">Customer number</label>
+				<div class="controls">
+					<input type="text" id="customer_number" readonly value="23778589">
+				</div>
+			</div>
+		</div>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label" for="last_name">Last name</label>
+				<div class="controls">
+					<input type="text" id="last_name">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span4">
+			<div class="control-group">
+				<label class="control-label" for="first_name">First name</label>
+				<div class="controls">
+					<input type="text" id="first_name">
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<div class="control-group">
+				<label class="control-label" for="first_name_2">First name 2</label>
+				<div class="controls">
+					<input type="text" id="first_name_2">
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<div class="control-group">
+				<label class="control-label" for="first_name_2">First name 3</label>
+				<div class="controls">
+					<input type="text" id="first_name_3">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span4">
+			<div class="control-group">
+				<label class="control-label" for="ss_nr_1">Social Security number</label>
+				<div class="controls clf-controls-fluid">
+					<div class="span4">
+						<input type="text" id="ss_nr_1">
+					</div>
+					<div class="span3">
+						<input type="text" id="ss_nr_2">
+					</div>
+					<div class="span5">
+						<input type="text" id="ss_nr_3">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label" for="additinal_info">Additional information</label>
+				<div class="controls">
+					<textarea id="additinal_info" cols="1" rows="5"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</fieldset>
+<div class="form-actions">
+	<button type="submit" class="btn btn-primary">Save changes</button>
+	<button class="btn">Cancel</button>
+</div>
+</form>
+<div id="sourcePanel">
+	<div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                Toggle source
+            </a>
+        </div>
+        <div id="collapseOne" class="accordion-body collapse">
+            <div id="source" class="accordion-inner"></div>
+        </div>
+    </div>
+</div>
+</div><!--/span-->
+</div><!--/row-->
 
-      <hr>
+<hr>
 
-      <footer>
-        <p>© <a href="http://nuyensgert.be/" target="_blank">nuyensgert</a> 2012</p>
-      </footer>
+<footer>
+  <p>© <a href="http://nuyensgert.be/" target="_blank">nuyensgert</a> 2012</p>
+</footer>
 
-    </div><!--/.fluid-container-->
+</div><!--/.fluid-container-->
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./assets/js/jquery-1.7.1.js"></script>
-    <script src="./assets/js/bootstrap-transition.js"></script>
-    <script src="./assets/js/bootstrap-alert.js"></script>
-    <script src="./assets/js/bootstrap-modal.js"></script>
-    <script src="./assets/js/bootstrap-dropdown.js"></script>
-    <script src="./assets/js/bootstrap-scrollspy.js"></script>
-    <script src="./assets/js/bootstrap-tab.js"></script>
-    <script src="./assets/js/bootstrap-tooltip.js"></script>
-    <script src="./assets/js/bootstrap-popover.js"></script>
-    <script src="./assets/js/bootstrap-button.js"></script>
-    <script src="./assets/js/bootstrap-collapse.js"></script>
-    <script src="./assets/js/bootstrap-carousel.js"></script>
-    <script src="./assets/js/bootstrap-typeahead.js"></script>
-
-  
+<script src="./assets/js/jquery-1.7.1.js"></script>
+<script src="./assets/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="./assets/js/bootstrap-transition.js"></script>
+<script src="./assets/js/bootstrap-alert.js"></script>
+<script src="./assets/js/bootstrap-modal.js"></script>
+<script src="./assets/js/bootstrap-dropdown.js"></script>
+<script src="./assets/js/bootstrap-scrollspy.js"></script>
+<script src="./assets/js/bootstrap-tab.js"></script>
+<script src="./assets/js/bootstrap-tooltip.js"></script>
+<script src="./assets/js/bootstrap-popover.js"></script>
+<script src="./assets/js/bootstrap-button.js"></script>
+<script src="./assets/js/bootstrap-collapse.js"></script>
+<script src="./assets/js/bootstrap-carousel.js"></script>
+<script src="./assets/js/bootstrap-typeahead.js"></script>
+<script src="./assets/js/prettify.js"></script>
+<script>
+	$('input.date-picker').datepicker({
+			showOn: 'button',
+			buttonImage: "./assets/img/datepicker.gif",
+			buttonImageOnly: true
+	 }).next(".ui-datepicker-trigger").addClass('add-on last');
+	 
+	 $("input[name='formLayout']").change(function() {
+		 $("#formExample").removeClass("form-horizontal form-vertical").addClass($("input[name='formLayout']:checked").val())
+	 });
+	 $("#source").html("<pre class='prettyprint linenums' />");
+	 $("#source pre").text($.trim($("#formExamplePanel").html()));
+	 prettyPrint();
+</script>
 
 </body></html>
