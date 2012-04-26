@@ -11,24 +11,27 @@
 .form-vertical.cfl .input-prepend.dbl .add-on.first,.form-horizontal.cfl .input-prepend.dbl .add-on.first{margin-left:-40px;width:36px;}
 .form-vertical.cfl .input-append.dbl .btn.last,.form-horizontal.cfl .input-append.dbl .btn.last{margin-right:-40px;width:48px;}
 .form-vertical.cfl .input-prepend.dbl .btn.first,.form-horizontal.cfl .input-prepend.dbl .btn.first{margin-left:-40px;width:48px;}
-.form-vertical.cfl .clf-controls-fluid,.form-horizontal.cfl .clf-controls-fluid{width:100%;*zoom:1;}
-.form-vertical.cfl .clf-controls-fluid:before,.form-horizontal.cfl .clf-controls-fluid:before,.form-vertical.cfl .clf-controls-fluid:after,.form-horizontal.cfl .clf-controls-fluid:after{display:table;content:"";}
-.form-vertical.cfl .clf-controls-fluid:after,.form-horizontal.cfl .clf-controls-fluid:after{clear:both;}
-.form-vertical.cfl .clf-controls-fluid>[class*="span"],.form-horizontal.cfl .clf-controls-fluid>[class*="span"]{float:left;margin-left:2.564102564%;}
-.form-vertical.cfl .clf-controls-fluid>[class*="span"]:first-child,.form-horizontal.cfl .clf-controls-fluid>[class*="span"]:first-child{margin-left:0;}
-.form-vertical.cfl .clf-controls-fluid>.span1,.form-horizontal.cfl .clf-controls-fluid>.span1{width:5.982905983%;}
-.form-vertical.cfl .clf-controls-fluid>.span2,.form-horizontal.cfl .clf-controls-fluid>.span2{width:14.529914530000001%;}
-.form-vertical.cfl .clf-controls-fluid>.span3,.form-horizontal.cfl .clf-controls-fluid>.span3{width:23.076923077%;}
-.form-vertical.cfl .clf-controls-fluid>.span4,.form-horizontal.cfl .clf-controls-fluid>.span4{width:31.623931624%;}
-.form-vertical.cfl .clf-controls-fluid>.span5,.form-horizontal.cfl .clf-controls-fluid>.span5{width:40.170940171000005%;}
-.form-vertical.cfl .clf-controls-fluid>.span6,.form-horizontal.cfl .clf-controls-fluid>.span6{width:48.717948718%;}
-.form-vertical.cfl .clf-controls-fluid>.span7,.form-horizontal.cfl .clf-controls-fluid>.span7{width:57.264957265%;}
-.form-vertical.cfl .clf-controls-fluid>.span8,.form-horizontal.cfl .clf-controls-fluid>.span8{width:65.81196581200001%;}
-.form-vertical.cfl .clf-controls-fluid>.span9,.form-horizontal.cfl .clf-controls-fluid>.span9{width:74.358974359%;}
-.form-vertical.cfl .clf-controls-fluid>.span10,.form-horizontal.cfl .clf-controls-fluid>.span10{width:82.905982906%;}
-.form-vertical.cfl .clf-controls-fluid>.span11,.form-horizontal.cfl .clf-controls-fluid>.span11{width:91.45299145300001%;}
-.form-vertical.cfl .clf-controls-fluid>.span12,.form-horizontal.cfl .clf-controls-fluid>.span12{width:100%;}
-.form-horizontal.cfl .clf-controls-fluid{width:auto;}
+.form-vertical.cfl .multi,.form-horizontal.cfl .multi{width:100%;*zoom:1;}
+.form-vertical.cfl .multi:before,.form-horizontal.cfl .multi:before,.form-vertical.cfl .multi:after,.form-horizontal.cfl .multi:after{display:table;content:"";}
+.form-vertical.cfl .multi:after,.form-horizontal.cfl .multi:after{clear:both;}
+.form-vertical.cfl .multi>[class*="span"],.form-horizontal.cfl .multi>[class*="span"]{float:left;margin-left:2.564102564%;}
+.form-vertical.cfl .multi>[class*="span"]:first-child,.form-horizontal.cfl .multi>[class*="span"]:first-child{margin-left:0;}
+.form-vertical.cfl .multi>span[class*="span"],.form-horizontal.cfl .multi>span[class*="span"]{display:table;}.form-vertical.cfl .multi>span[class*="span"]>*,.form-horizontal.cfl .multi>span[class*="span"]>*{display:table-cell;}
+.form-vertical.cfl .multi>span[class*="span"] .prepend,.form-horizontal.cfl .multi>span[class*="span"] .prepend{padding-right:5px;}
+.form-vertical.cfl .multi>span[class*="span"] .append,.form-horizontal.cfl .multi>span[class*="span"] .append{padding-left:5px;}
+.form-vertical.cfl .multi>.span1,.form-horizontal.cfl .multi>.span1{width:5.982905983%;}
+.form-vertical.cfl .multi>.span2,.form-horizontal.cfl .multi>.span2{width:14.529914530000001%;}
+.form-vertical.cfl .multi>.span3,.form-horizontal.cfl .multi>.span3{width:23.076923077%;}
+.form-vertical.cfl .multi>.span4,.form-horizontal.cfl .multi>.span4{width:31.623931624%;}
+.form-vertical.cfl .multi>.span5,.form-horizontal.cfl .multi>.span5{width:40.170940171000005%;}
+.form-vertical.cfl .multi>.span6,.form-horizontal.cfl .multi>.span6{width:48.717948718%;}
+.form-vertical.cfl .multi>.span7,.form-horizontal.cfl .multi>.span7{width:57.264957265%;}
+.form-vertical.cfl .multi>.span8,.form-horizontal.cfl .multi>.span8{width:65.81196581200001%;}
+.form-vertical.cfl .multi>.span9,.form-horizontal.cfl .multi>.span9{width:74.358974359%;}
+.form-vertical.cfl .multi>.span10,.form-horizontal.cfl .multi>.span10{width:82.905982906%;}
+.form-vertical.cfl .multi>.span11,.form-horizontal.cfl .multi>.span11{width:91.45299145300001%;}
+.form-vertical.cfl .multi>.span12,.form-horizontal.cfl .multi>.span12{width:100%;}
+.form-horizontal.cfl .multi{width:auto;}
 input,textarea,select,.uneditable-input{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
 input,button,select{font-size:13px;font-weight:normal;height:28px;}
 fieldset>.cfl_top{margin-top:18px;-webkit-margin-top-collapse:separate;}

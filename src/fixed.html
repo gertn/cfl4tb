@@ -108,13 +108,9 @@
 		<div class="span6">
 			<div class="control-group">
 				<label class="control-label" for="state">State/Zip</label>
-				<div class="controls clf-controls-fluid">
-					<div class="span6">
-						<input type="text" id="state">
-					</div>
-					<div class="span6">
-						<input type="text" id="zip">
-					</div>
+				<div class="controls multi">
+					<input class="span6" type="text" id="state">
+					<input class="span6" type="text" id="zip">
 				</div>
 			</div>
 		</div>
@@ -186,16 +182,14 @@
 		<div class="span4">
 			<div class="control-group">
 				<label class="control-label" for="ss_nr_1">Social Security number</label>
-				<div class="controls clf-controls-fluid">
-					<div class="span4">
-						<input type="text" id="ss_nr_1">
-					</div>
-					<div class="span3">
+				<div class="controls multi">
+					<input class="span4" type="text" id="ss_nr_1">
+					<span class="span3">
+						<span class="prepend">/</span>
 						<input type="text" id="ss_nr_2">
-					</div>
-					<div class="span5">
-						<input type="text" id="ss_nr_3">
-					</div>
+						<span class="append">/</span>
+					</span>
+					<input class="span5" type="text" id="ss_nr_3">
 				</div>
 			</div>
 		</div>
